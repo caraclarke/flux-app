@@ -4,7 +4,7 @@
   "description": "Flux Practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "watchify app/main.jsx -v -t [ babelify --presets [ react ] ] -o ./js/main.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/caraclarke/flux-app/issues"
   },
-  "homepage": "https://github.com/caraclarke/flux-app#readme"
+  "homepage": "https://github.com/caraclarke/flux-app#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "react-router": "^2.0.0",
+    "reflux": "^0.4.0",
+    "watchify": "^3.7.0"
+  }
 }
